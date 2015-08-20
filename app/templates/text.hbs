@@ -1,0 +1,12 @@
+<h3>All Texts</h3>
+{{#link-to 'index'}}<button value="Go Back">Go Back</button>{{/link-to}}
+<br />
+<br />
+{{#if model}}
+  {{#each model as |text|}}
+  <i>{{text.text}}</i> <br />
+  <i>----------------------------</i> <br />
+  {{/each}}
+{{else}}
+  No Texts Saved.
+{{/if}}

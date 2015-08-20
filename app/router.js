@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('text', { path: '/texts' });
+  this.route('text');
 });
 
 export default Router;

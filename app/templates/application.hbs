@@ -1,3 +1,7 @@
-<h2 id="title">Welcome to Ember</h2>
-
+<h2 id="title">Text App</h2>
+{{textarea id="text" name="text" rows="5" cols="30" value=textValue }}
+<br />
+<br />
+<button name="save" value="Save" {{action 'save'}}>Save</button>
+{{#link-to 'text'}}<button name="list" value="List">List</button>{{/link-to}}
 {{outlet}}
